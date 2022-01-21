@@ -1,16 +1,18 @@
 import "phaser";
-import { WelcomeScene } from "./welcomeScene";
-import { GameScene } from "./gameScene";
-import { ScoreScene } from "./scoreScene";
+import { WelcomeScene } from "./scenes/welcomeScene";
+import { GameStarfall } from "./scenes/game_starfall";
+import { GameArkanoid } from "./scenes/game_arkanoid";
+import { ScoreScene } from "./scenes/scoreScene";
 
 const config : GameConfig = {
-    title : "Starfall",
+    title : "P3TS",
     width : 800,
     height : 600,
     parent : "game",
     scene : [
         WelcomeScene,
-        GameScene,
+        GameArkanoid,
+        GameStarfall,
         ScoreScene
     ],
     physics : {
@@ -22,12 +24,12 @@ const config : GameConfig = {
     backgroundColor : "#000033"
 };
 
-export class Starfall extends Phaser.Game {
+export class Game extends Phaser.Game {
     constructor(config : GameConfig) {
         super(config);
     }
 }
 
 window.onload = () => {
-    var game = new Starfall(config);
+    var game = new Game(config);
 }

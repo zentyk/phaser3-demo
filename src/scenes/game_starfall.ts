@@ -1,6 +1,6 @@
 import "phaser";
 
-export class GameScene extends Phaser.Scene {
+export class GameStarfall extends Phaser.Scene {
     delta : number;
     lastStarTime : number = 0;
     starsCaught : number = 0;
@@ -10,20 +10,23 @@ export class GameScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: "GameScene"
+            key: "GameStarfall"
         });
     }
+
     init(/*params: any*/) : void {
         this.delta = 10000;
         this.lastStarTime = 0;
         this.starsCaught = 0;
         this.starsFallen = 0;
     }
+    
     preload() : void {
         this.load.setBaseURL("https://raw.githubusercontent.com/mariyadavydova/starfall-phaser3-typescript/master/");
         this.load.image("star", "assets/star.png");
         this.load.image("sand", "assets/sand.jpg");
     }
+    
     create() : void {
         this.sand = this.physics.add.staticGroup({
             key: 'sand',
@@ -35,6 +38,7 @@ export class GameScene extends Phaser.Scene {
         this.sand.refresh();
         this.info = this.add.text(10,10,'',{ font : '24px Arial Bold', fill : '#FBFBAC' });
     }
+    
     update(time : number) : void {
         var diff : number = time - this.lastStarTime;
         if(diff>this.delta){
