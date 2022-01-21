@@ -56,7 +56,6 @@ export class GameArkanoid extends Phaser.Scene {
         }
 
         if(this.ball.y>610) {
-            console.log('fin');
             this.scene.start("ScoreScene",{starsCaught : 10});
         }
     }
