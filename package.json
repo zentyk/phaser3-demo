@@ -4,8 +4,6 @@
   "description": "A Phaser 3 - Typescript Demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dev": "./node_modules/.bin/esbuild ./src/app.ts --bundle --sourcemap --target=es2015 --outfile=./dist/dev/app.js --format=esm",
     "build-prod": "./node_modules/.bin/esbuild ./src/app.ts --bundle --minify --target=es2015 --outfile=./dist/prod/app.min.js --format=esm"
   },
   "repository": {
@@ -24,8 +22,6 @@
   "homepage": "https://github.com/zentyk/phaser3-demo#readme",
   "devDependencies": {
     "esbuild": "^0.14.11",
-    "phaser": "^3.55.2",
-    "ts-loader": "^9.2.6",
-    "typescript": "^4.5.4"
+    "phaser": "^3.55.2"
   }
 }
