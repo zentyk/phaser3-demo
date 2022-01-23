@@ -1,5 +1,8 @@
 import "phaser";
 export class main_map extends Phaser.Scene {
+    cursors : any;
+    player : any;
+
     constructor() {
         super("MainMap");
     }
@@ -7,12 +10,14 @@ export class main_map extends Phaser.Scene {
     preload () {
         this.load.image("tileset","assets/main_map/baseTileset.png");
         this.load.tilemapTiledJSON("map", "assets/main_map/map.json");
+        this.load.spritesheet("wizard", "assets/player/player.png",{frameHeight:50, frameWidth:50});
+        this.load.atlas("player","assets/player/player.png","assets/player/wizards_atlas.json");
     }
 
     create () {
+
         const map = this.make.tilemap({key:"map",tileWidth :16,tileHeight:16});
         const tileset = map.addTilesetImage("baseTileset","tileset");
-
         const layer_base = map.createLayer("ground",tileset,0,0);
         const layer_handw = map.createLayer("hills and water",tileset,0,0);
         const layer_trees = map.createLayer("trees",tileset,0,0);
@@ -24,5 +29,35 @@ export class main_map extends Phaser.Scene {
         const layer_lights = map.createLayer("lights",tileset,0,0);
         const layer_interactables = map.createLayer("interactables",tileset,0,0);
         const layer_spawn = map.createLayer("spawn",tileset,0,0);
+
+        this.player = this.physics.add.sprite(384,31.6666666666667,"player", "player_idle_0");
+        this.physics.add.collider(this.player,layer_interactables);
+
+        //this.cameras.main.setBounds(0,0,map.dis)
+        this.cameras.main.startFollow(this.player);
+
+        this.cursors = this.input.keyboard.createCursorKeys();
+    }
+
+    update() {
+        if(this.cursors.left.isDown) {
+            this.player.setVelocityX(-200);
+        }
+        else if(this.cursors.right.isDown) {
+            this.player.setVelocityX(200);
+        }
+        else {
+            this.player.setVelocityX(0);
+        }
+
+        if(this.cursors.up.isDown) {
+            this.player.setVelocityY(-200);
+        }
+        else if(this.cursors.down.isDown) {
+            this.player.setVelocityY(200);
+        }
+        else {
+            this.player.setVelocityY(0);
+        }
     }
 }
