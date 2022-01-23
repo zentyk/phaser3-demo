@@ -21,8 +21,9 @@
     "url": "https://github.com/zentyk/phaser3-demo/issues"
   },
   "homepage": "https://github.com/zentyk/phaser3-demo#readme",
+
   "devDependencies": {
-    "esbuild": "^0.14.11",
+    "esbuild": "^0.14.12",
     "phaser": "^3.55.2"
   }
 }
