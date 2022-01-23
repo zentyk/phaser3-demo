@@ -1,5 +1,6 @@
 import "phaser";
 import { WelcomeScene } from "./scenes/welcomeScene";
+import { main_map } from "./scenes/main_map";
 import { GameStarfall } from "./scenes/game_starfall";
 import { GameArkanoid } from "./scenes/game_arkanoid";
 import { ScoreScene } from "./scenes/scoreScene";
@@ -11,6 +12,7 @@ const config : GameConfig = {
     parent : "game",
     scene : [
         WelcomeScene,
+        main_map,
         GameArkanoid,
         GameStarfall,
         ScoreScene
@@ -21,7 +23,7 @@ const config : GameConfig = {
             debug : false
         }
     },
-    backgroundColor : "#000033"
+    backgroundColor : "#000FFF"
 };
 
 export class Game extends Phaser.Game {

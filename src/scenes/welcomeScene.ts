@@ -22,7 +22,7 @@ export class WelcomeScene extends Phaser.Scene {
         });
 
         this.input.on('pointerdown', () => {
-            this.scene.start("GameArkanoid");
+            this.scene.start("MainMap");
         },this);
     }
 }

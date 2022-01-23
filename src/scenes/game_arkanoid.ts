@@ -11,10 +11,10 @@ export class GameArkanoid extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image("backgound","assets/background.png");
-        this.load.image("gameover","assets/gameover.png");
-        this.load.image("platform","assets/platform.png");
-        this.load.image("ball","assets/ball.png");
+        this.load.image("backgound","assets/game_arkanoid/background.png");
+        this.load.image("gameover","assets/game_arkanoid/gameover.png");
+        this.load.image("platform","assets/game_arkanoid/platform.png");
+        this.load.image("ball","assets/game_arkanoid/ball.png");
     }
 
     create() {
@@ -47,16 +47,20 @@ export class GameArkanoid extends Phaser.Scene {
 
     update() {
         if(this.cursors.left.isDown) {
-            this.platform.setVelocityX(-500);
+            this.platform.setVelocityX(-300);
         } else if(this.cursors.right.isDown) {
-            this.platform.setVelocityX(500);
+            this.platform.setVelocityX(300);
         }
+
         else {
             this.platform.setVelocityX(0);
         }
 
+        if(this.cursors.left.isUp && this.cursors.right.isUp) {
+            this.platform.setVelocityX(0);
+        }
+
         if(this.ball.y>610) {
-            console.log('fin');
             this.scene.start("ScoreScene",{starsCaught : 10});
         }
     }
