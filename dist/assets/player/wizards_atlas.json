@@ -1,0 +1,228 @@
+{
+    "frames": [
+        {
+            "filename": "player_idle_0",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_d_walk_0",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_d_walk_1",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 50,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_d_walk_2",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 100,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_d_walk_3",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 150,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_l_walk_0",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 0,
+                "y": 50
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_l_walk_1",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 50,
+                "y": 50
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_l_walk_2",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 100,
+                "y": 50
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_l_walk_3",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 150,
+                "y": 50
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_u_walk_0",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 0,
+                "y": 100
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_u_walk_1",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 50,
+                "y": 100
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_u_walk_2",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 100,
+                "y": 100
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_u_walk_3",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 150,
+                "y": 100
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_r_walk_0",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 0,
+                "y": 150
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_r_walk_1",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 50,
+                "y": 150
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_r_walk_2",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 100,
+                "y": 150
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "player_r_walk_3",
+            "frame": {
+                "w": 50,
+                "h": 50,
+                "x": 150,
+                "y": 150
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Metabit default atlas for wizards"
+    }
+}

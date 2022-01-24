@@ -33,5 +33,6 @@ export class Game extends Phaser.Game {
 }
 
 window.onload = () => {
-    var game = new Game(config);
+    //new game
+    let game = new Game(config);
 }

@@ -7,6 +7,8 @@ export class GameStarfall extends Phaser.Scene {
     starsFallen : number = 0;
     sand : Phaser.Physics.Arcade.StaticGroup;
     info : Phaser.GameObjects.Text;
+    keyGame1 : any;
+    keyGame2 : any;
 
     constructor() {
         super({
@@ -37,6 +39,9 @@ export class GameStarfall extends Phaser.Scene {
 
         this.sand.refresh();
         this.info = this.add.text(10,10,'',{ font : '24px Arial Bold', fill : '#FBFBAC' });
+
+        this.keyGame1 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ONE);
+        this.keyGame2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.TWO);
     }
     
     update(time : number) : void {
@@ -50,6 +55,13 @@ export class GameStarfall extends Phaser.Scene {
         }
         this.info.text = this.starsCaught + " caught - "+
         this.starsFallen + " fallen (max 3)";
+
+        if(this.keyGame1.isDown){
+            this.scene.start("GameArkanoid");
+        }
+        if(this.keyGame2.isDown){
+            this.scene.start("GameStarfall");
+        }
     }
 
     private onClick(star : Phaser.Physics.Arcade.Image) : () => void {
