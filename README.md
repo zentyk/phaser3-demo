@@ -1,6 +1,4 @@
-# phaser3-demo
-
-Phaser 3 Typescript Demo
+# Phaser 3 Typescript Demo
 
 ## Requeriments
 
@@ -11,6 +9,10 @@ Phaser 3 Typescript Demo
 
 Just run `npm install`
 
+## Compilation
+
+* run `npm run build-dev` to build debug files
+* run `npm run build-prod` to build production files.
  ## Usage
 
 Just run `docker compose up -d`

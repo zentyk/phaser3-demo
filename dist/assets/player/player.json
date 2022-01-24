@@ -1,0 +1,112 @@
+{
+    "anims": [
+        {
+            "key": "walk_up_9999999",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_u_walk_0"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_u_walk_1"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_u_walk_2"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_u_walk_3"
+                }
+            ]
+        },
+        {
+            "key": "walk_right_9999999",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_r_walk_0"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_r_walk_1"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_r_walk_2"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_r_walk_3"
+                }
+            ]
+        },
+        {
+            "key": "walk_left_9999999",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_l_walk_0"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_l_walk_1"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_l_walk_2"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_l_walk_3"
+                }
+            ]
+        },
+        {
+            "key": "walk_down_9999999",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_d_walk_0"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_d_walk_1"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_d_walk_2"
+                },
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_d_walk_3"
+                }
+            ]
+        },
+        {
+            "key": "idle_down_9999999",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "wiz-9999999",
+                    "frame": "6050_idle_0"
+                }
+            ]
+        }
+    ]
+}

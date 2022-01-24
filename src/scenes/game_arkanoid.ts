@@ -5,6 +5,8 @@ export class GameArkanoid extends Phaser.Scene {
     platform : any;
     cursors : any;
     ball : any;
+    keyGame1 : any;
+    keyGame2 : any;
 
     constructor() {
         super({key: "GameArkanoid"});
@@ -43,6 +45,9 @@ export class GameArkanoid extends Phaser.Scene {
         this.physics.add.collider(this.ball,this.platform);
 
         this.cursors = this.input.keyboard.createCursorKeys();
+
+        this.keyGame1 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ONE);
+        this.keyGame2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.TWO);
     }
 
     update() {
@@ -62,6 +67,13 @@ export class GameArkanoid extends Phaser.Scene {
 
         if(this.ball.y>610) {
             this.scene.start("ScoreScene",{starsCaught : 10});
+        }
+
+        if(this.keyGame1.isDown){
+            this.scene.start("GameArkanoid");
+        }
+        if(this.keyGame2.isDown){
+            this.scene.start("GameStarfall");
         }
     }
 }
