@@ -2,6 +2,7 @@ import "phaser";
 export class WelcomeScene extends Phaser.Scene {
     title : Phaser.GameObjects.Text;
     hint : Phaser.GameObjects.Text;
+    madeBy : Phaser.GameObjects.Text;
 
     constructor() {
         super({
@@ -20,6 +21,10 @@ export class WelcomeScene extends Phaser.Scene {
             font : '24PX Arial Bold',
             fill : '#FBFBAC'
         });
+
+        let madeByText : string = "Made by @zentykdev";
+        this.madeBy = this.add.text(250,570,madeByText, {font:'24px ArialBold',fill:'#FFFFFF'})
+
 
         this.input.on('pointerdown', () => {
             this.scene.start("MainMap");
